@@ -2,12 +2,12 @@
 html{
     font-size: 70%;
     scroll-behavior: smooth;
-    background-color: var(--connectionButtonTextColor);
 }
 body{
     font: 1.6rem 'Arimo', sans-serif;
     margin: 0;
     padding: 0; 
+    background-color: var(--backgroundColor);
 }
 h1,h2,h3,h4,h5,h6,p,figure,ul,ol{
     margin: 0;
@@ -20,4 +20,43 @@ a{
 }
 *{
     box-sizing: border-box;
+}
+
+:root {
+    --backgroundColor: #fafafa;
+    --buttonColor: #3897f0;
+    --buttonColorHover: #3388d8;
+    --colorTextHeader: rgb(122, 121, 121);
+}
+
+header h1 {
+    text-align: center;
+    color: var(--colorTextHeader);
+}
+
+main section {
+    margin: 0 auto;
+    display: block;
+    padding: 2rem;
+    max-width: 370px;
+    border: solid 1px gray;
+}
+
+form input {
+    background-color: var(--backgroundColor);
+}
+
+form input:last-child {
+    background-color: var(--buttonColor);
+}
+
+section h3:before, h3:after { content:''; display:inline-block; vertical-align: middle; width: 12.5rem; height: 1px; background: var(--backgroundColor) }
+h3:before { margin-right: .3rem }
+h3:after { margin-left: .3rem }
+
+section p a {
+    color: var(--buttonColor);
+}
+section p a:hover {
+    color: var(--buttonColorHover);
 }

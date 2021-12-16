@@ -1,10 +1,7 @@
-function sign_in()
-{
-    let username = document.getElementById("username").value;
-    let password = document.getElementById("password").value;
-    if ( username == "djason.gadiou.sio" && password == "formget#123"){
+let email = document.getElementById("email").value;
+let mdp = document.getElementById("password").value;
+if ( email == "djason.gadiou.sio@gmail.com" && mdp == "starfoullah"){
     alert ("Login successfully");
     window.location = "accueil.html";
     return false;
-}
 }

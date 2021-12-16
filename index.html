@@ -4,18 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Clone Instagram ...">
+    <meta name="description" content="Clone Instagram">
     <title>Clone Instagram</title>
     <link rel="icon" type="image/png" href="./asset/img/icon_google.png">
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
-    <form action="script.js">
-        <fieldset>
+<main>
+    <body>
+        <header>
+            <h1>RÉALISATION D'UNE COPIE DE LA PAGE DE CONNEXION DU SITE <b>INSTAGRAM</b></h1>
+        </header>
 
-        </fieldset>
-    </form>
+        <section>
+            <object type="image/svg+xml" data="./svg/logo_instagram.svg"></object>
+            <form action="js/script.js" method="post">
+                <input type="email" id="email" required placeholder="Mail d'utilisateur">
+                <input type="password" id="password" required placeholder="Mot de passe">
+                <input type="button" value="Se connecter">
+            </form>
+            <h3>OU</h3>
+            <p><img src="#" alt="logo_instagram">Se connecter avec Facebook</p>
+            <p>Mot de passe oublié ?</p>
+        </section>
 
-    <script></script>
-</body>
+        <section>
+            <p>Vous n'avez pas de compte ? <a href="#">Inscrivez-vous</a></p>
+        </section>
+
+    </body>
+</main>
 </html>
