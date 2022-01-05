@@ -30,13 +30,14 @@ button{
 :root {
     --backgroundColor: #fafafa;
     --buttonColor: #3897f0;
-    --buttonColorHover: #3388d8;
+    --buttonColorHover: #385185;
     --colorTextHeader: #c2c2c2;
     --errorColor: rgb(255, 0, 0);
     --successColor: rgb(0, 129, 0);
     --shadowHeaderLogo: #222;
     --backgroundForm: #fff;
     --formColor: #dedede;
+    --hrColor: #959595;
 }
 /* header */
 
@@ -151,19 +152,19 @@ section .fin li a{
     transform: translateX(-1rem);
 }
 .form ul .fa a{
-    color: #385185;
+    color: var(--buttonColorHover);
 }
 .form .ou{
     text-align: center;
     transform: translateY(1rem);
     background-color: var(--backgroundForm);
     width: 5rem;
-    color: #959595;
+    color: var(--hrColor);
     margin: 0rem auto;
 }
 .form  hr{
     width: 100%;
-    border: solid 0.1rem #959595;
+    border: solid 0.1rem var(--hrColor);
     margin: 0 auto;
 }
 section a{

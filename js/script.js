@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let exprmail = /^[a-zA-Z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$/;
     let exprmdp = /^[a-zA-Z0-9._-]{2,15}$/;
     let user_email = 'djason.gadiou.sio@gmail.com';
-    let user_pw = 'ordinateur';
+    let user_pw = 'Ordinateur88';
 
     warning = document.querySelector(".form p");
     email = document.getElementsByTagName("input")[0].value;
