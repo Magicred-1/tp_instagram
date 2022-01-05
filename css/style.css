@@ -151,8 +151,8 @@ section .fin li a{
     width: 1.5rem;
     transform: translateX(-1rem);
 }
-.form ul .fa a{
-    color: var(--buttonColorHover);
+.form ul li a{
+    color: var(--buttonColor);
 }
 .form .ou{
     text-align: center;
