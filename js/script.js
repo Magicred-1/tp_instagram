@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
         email = document.getElementsByTagName("input")[0].value;
         password = document.getElementsByTagName("input")[1].value;
 
-        if (email.match(exprmail) && email.match(user_email)) {
+        if (email.match(exprmail) && email.match(exprmdp)) {
             warning.classList.add("success"); 
             warning.classList.remove("error");
             warning.innerText = "Connexion réussie";
