@@ -67,7 +67,7 @@ main{
     background-color: var(--backgroundForm);
     border: solid 0.2rem var(--formColor);
     margin: 1rem auto;
-    padding: 4rem;
+    padding: 3rem;
     max-width: 37rem;
 }
 /*alert*/
