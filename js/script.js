@@ -18,20 +18,20 @@ document.addEventListener("DOMContentLoaded", () => {
         email = document.getElementsByTagName("input")[0].value;
         password = document.getElementsByTagName("input")[1].value;
 
-        if (email.match(exprmail) && email.match(exprmdp)) {
-            warning.classList.add("success"); 
+        if (email.match(exprmail) && password.match(exprmdp)) {
+            warning.classList.add("success");
             warning.classList.remove("error");
             warning.innerText = "Connexion réussie";
             localStorage.setItem("user", email);
             sessionStorage.setItem("user", "sessionid");
             document.location.assign("accueil.html");
-        } if (password.match(exprmdp)) {
+        } else if (password.match(exprmdp)) {
             warning.classList.add("error");
-            warning.innerText = "Mot de passe invalide";
+            warning.innerText = "Mail invalide";
             warning.classList.remove("success");
         } else if (email.match(exprmail)) {
             warning.classList.add("error");
-            warning.innerText = "Mail invalide";
+            warning.innerText = "Mot de passe invalide";
             warning.classList.remove("success");
         } else {
             warning.classList.add("error");

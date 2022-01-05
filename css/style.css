@@ -175,6 +175,60 @@ section  .inst{
     display: block;
     margin: 0 auto;
 }
+figure{
+    display: block;
+    margin: 0rem auto;
+    max-width: 90rem; 
+    background-color: #222;
+}
+figure figcaption h2{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+figure figcaption img{
+    max-width: 6rem;
+    padding: 1rem;
+}
+figure ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+figure ul li img{
+    max-width: 100%;
+    height: auto;
+    border: solid .1rem #222;
+    display: block;
+
+}
+figure figcaption h2{
+    color: #fff;
+}
+section p{
+    text-align: center;
+    transform: translateY(1rem);
+    background-color: #fff;
+    color: #959595;
+    margin: 0rem auto;
+}
+section p a {
+    color: var(--buttonColor)
+}
+section .connexion form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+.store{
+    border: none;
+}
+.store ul li img{
+    max-width: 15rem;
+}
 
 
 /*footer*/
