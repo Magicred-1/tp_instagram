@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
         password = document.getElementsByTagName("input")[1].value;
 
         if (email.match(exprmail) && email.match(user_email) && password.match(exprmdp) && (password.match(user_pw))) {
-            warning.classList.add("success");
+            warning.classList.add("success"); 
             warning.classList.remove("error");
             warning.innerText = "Connexion réussie";
             localStorage.setItem("user", email);
