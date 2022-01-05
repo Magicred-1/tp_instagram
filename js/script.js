@@ -27,13 +27,13 @@ document.addEventListener("DOMContentLoaded", () => {
             localStorage.setItem("user", email);
             sessionStorage.setItem("user", "sessionid");
             document.location.assign("accueil.html");
-        } else if (password.match(exprmdp)) {
+        } if (password.match(exprmdp)) {
             warning.classList.add("error");
-            warning.innerText = "Mail invalide";
+            warning.innerText = "Mot de passe invalide";
             warning.classList.remove("success");
         } else if (email.match(exprmail)) {
             warning.classList.add("error");
-            warning.innerText = "Mot de passe invalide";
+            warning.innerText = "Mail invalide";
             warning.classList.remove("success");
         } else {
             warning.classList.add("error");
