@@ -231,8 +231,8 @@ section .connexion form{
 .store{
     border: none;
 }
-.store ul li img{
-    max-width: 15rem;
+ul li a img{
+    max-width: 13rem;
 }
 /*footer*/
 footer p{
