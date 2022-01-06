@@ -179,7 +179,7 @@ figure{
     display: block;
     margin: 0rem auto;
     max-width: 90rem; 
-    background-color: #222;
+    background-color: var(--shadowHeaderLogo);
 }
 figure figcaption h2{
     display: flex;
@@ -199,18 +199,18 @@ figure ul{
 figure ul li img{
     max-width: 100%;
     height: auto;
-    border: solid .1rem #222;
+    border: solid .1rem var(--shadowHeaderLogo);
     display: block;
 
 }
 figure figcaption h2{
-    color: #fff;
+    color: var(--backgroundColor);
 }
 section p{
     text-align: center;
     transform: translateY(1rem);
-    background-color: #fff;
-    color: #959595;
+    background-color: var(--backgroundColor);
+    color: var(--hrColor);
     margin: 0rem auto;
 }
 section p a {
